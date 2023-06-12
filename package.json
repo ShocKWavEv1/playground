@@ -1,0 +1,43 @@
+{
+  "name": "playground",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "@chakra-ui/react": "^2.7.0",
+    "@emotion/react": "^11.11.1",
+    "@emotion/styled": "^11.11.0",
+    "@react-three/drei": "^9.74.8",
+    "@react-three/fiber": "^8.13.1",
+    "@studio-freight/hamo": "^0.6.18",
+    "@studio-freight/lenis": "^1.0.14",
+    "@studio-freight/tempus": "^0.0.37",
+    "clsx": "^1.2.1",
+    "critters": "^0.0.18",
+    "duplicate-package-checker-webpack-plugin": "^3.0.0",
+    "framer-motion": "^10.12.16",
+    "glslify-loader": "^2.0.0",
+    "gsap": "^3.12.1",
+    "leva": "^0.9.35",
+    "nanoevents": "^7.0.1",
+    "next": "^13.4.5",
+    "raw-loader": "^4.0.2",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-use": "^17.4.0",
+    "three": "^0.153.0",
+    "zustand": "^4.3.8"
+  },
+  "devDependencies": {
+    "@next/bundle-analyzer": "^13.4.5",
+    "@svgr/webpack": "^8.0.1",
+    "@types/node": "20.3.0",
+    "@types/react": "18.2.11",
+    "typescript": "5.1.3"
+  }
+}
