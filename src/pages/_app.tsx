@@ -7,6 +7,7 @@ import LoadingBar from "react-top-loading-bar";
 import Fonts from "@/theme/fonts/fonts";
 import theme from "@/theme/theme";
 import dynamic from "next/dynamic";
+import Layout from "./components/layout/layout";
 
 const Cursor = dynamic(
   () => import("./components/cursor/cursor").then((mod) => mod.Cursor),
@@ -54,8 +55,12 @@ export default function App({ Component, pageProps, router }: AppProps) {
     <ChakraProvider theme={theme}>
       <Fonts />
       <Cursor />
-      <LoadingBar ref={LoadingBarRef} height={8} color="#ff98a1" />
-      <Component {...pageProps} />
+      <LoadingBar ref={LoadingBarRef} height={4} color="#ea2a38" />
+      <div className="home">
+        <Layout>
+          <Component {...pageProps} />
+        </Layout>
+      </div>
     </ChakraProvider>
   );
 }

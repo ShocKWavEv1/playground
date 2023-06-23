@@ -1,6 +1,7 @@
 import { extendTheme } from "@chakra-ui/react";
 import { getColors } from "./colors/getColors";
 import colorsToken from "./colors/colors.json";
+import { HeadingTheme as Heading } from "./designSystem/headingTheme/headingTheme";
 
 // HOUSECOLOR COMPONENTS
 
@@ -24,6 +25,9 @@ const theme = extendTheme({
   breakpoints,
   config,
   colors,
+  components: {
+    Heading,
+  }
 });
 
 export default theme;
